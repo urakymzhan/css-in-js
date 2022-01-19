@@ -1,13 +1,10 @@
-// Styled Components example
-
-import Card from "./components/Card";
+import CardTwo from "./components/CardTwo";
 import {
   BsFillBadge4KFill,
   BsFillBadgeHdFill,
   BsFillBadgeVrFill,
   BsFillBadge3DFill,
 } from "react-icons/bs";
-import { AppDiv } from "./styled";
 
 const cards = [
   {
@@ -50,11 +47,11 @@ const cards = [
 
 function App() {
   return (
-    <AppDiv>
+    <div className="flex justify-around text-center mt-10">
       {cards.map((card) => {
-        return <Card card={card} key={card.id} />;
+        return <CardTwo card={card} key={card.id} />;
       })}
-    </AppDiv>
+    </div>
   );
 }
 
